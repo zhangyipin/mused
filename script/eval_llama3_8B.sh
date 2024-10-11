@@ -8,8 +8,8 @@ OUTPUT_PATH="${BASE_RES_PATH}/${NAME}"
 model_path="MODEL_PATH"
 
 mkdir -p $OUTPUT_PATH
-python ../eval_codes/llama3_8b/uf_sample_batch.py --input-path $LOGITS_INPUT_PATH --output-path "${OUTPUT_PATH}/final_prompts.jsonl" --model-path $model_path
+python ../src/infer_codes/llama3_8b/uf_sample_batch.py --input-path $LOGITS_INPUT_PATH --output-path "${OUTPUT_PATH}/final_prompts.jsonl" --model-path $model_path
 res_path="${OUTPUT_PATH}/final_prompts.jsonl"
-python ../codes/scores.py ${res_path} ${res_path}.score_res ${res_path}.report_res ${res_path}.report_res.xlsx
+python ../src/codes/scores.py ${res_path} ${res_path}.score_res ${res_path}.report_res ${res_path}.report_res.xlsx
 
 
