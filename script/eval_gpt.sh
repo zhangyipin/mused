@@ -4,7 +4,7 @@ BASE_RES_PATH="../eval_res"
 
 
 
-gpt_key="sk-M9FGh6L84mlefKKgAa88B0882c0f4a85B7352dD38602225e"
+gpt_key="sk-xxxxx"
 model_name="gpt-4o"
 #model_name="o1-preview"
 #model_name="o1-mini"
